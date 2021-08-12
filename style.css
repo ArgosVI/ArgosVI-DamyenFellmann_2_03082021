@@ -1,0 +1,255 @@
+:root {
+  --color1: #0065fc;
+  --color2: #deebff;
+  --color3: #f2f2f2;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+/*********************** LOGO ***********************/
+#logo_reservia {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+/*********************** ANCRE ***********************/
+#anchor {
+  float: right;
+  width: 230px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#hebergement {
+  text-decoration: none;
+  float: left;
+  color: black;
+  margin-top: 50px;
+}
+#hebergement:hover {
+  margin-top: 0px;
+  padding-top: 48px;
+  border-top: 2px solid var(--color1);
+  color: var(--color1);
+}
+
+#activites {
+  text-decoration: none;
+  float: right;
+  color: black;
+  margin-top: 50px;
+}
+#activites:hover {
+  margin-top: 0px;
+  padding-top: 48px;
+  border-top: 2px solid var(--color1);
+  color: var(--color1);
+}
+
+/*********************** SIGNUP ***********************/
+#signup {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color1);
+  float: right;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+/*********************** PARAGRAPHES ***********************/
+#introducing_text {
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#strong {
+  text-decoration: none;
+}
+
+#p1 {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#p2 {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/*********************** RECHERCHE ***********************/
+#search_button {
+  margin-left: 50px;
+  height: 100px;
+  width: 500px;
+}
+
+#map {
+  font-size: 20px;
+  border: 18px solid var(--color3);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  float: left;
+}
+
+#city_country {
+  height: 20px;
+  width: 210px;
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  border-top: 2px solid var(--color3);
+  border-bottom: 2px solid var(--color3);
+  border-left: 0;
+  border-right: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+#city_country:focus {
+  outline: none;
+}
+#city_country:hover {
+  background-color: var(--color3);
+  transition: 0.5s;
+}
+
+::placeholder {
+  color: black;
+}
+
+#search {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 55px;
+  width: 150px;
+  background-color: var(--color1);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+#search:hover {
+  cursor: pointer;
+}
+
+/*********************** FILTRES ***********************/
+#filters {
+  padding-left: 60px;
+  height: 20px;
+  width: 1200px;
+  display: flex;
+}
+
+#filtres {
+  font-weight: 600;
+}
+
+/*********************** Informations ***********************/
+#information {
+  padding-left: 50px;
+  height: 70px;
+  display: flex;
+}
+
+#i {
+  vertical-align: middle;
+  height: 15px;
+  width: 15px;
+  border: 7px solid white;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 1px black;
+  color: var(--color1);
+  vertical-align: middle;
+  text-align: center;
+  align-self: center;
+}
+
+#logements {
+  padding-left: 13px;
+  vertical-align: middle;
+  text-align: center;
+  align-self: center;
+  margin: 0;
+}
+
+/*********************** Annonces ***********************/
+
+#annonces {
+  margin-left: 50px;
+  height: 500px;
+  width: 900px;
+}
+
+#premiere_ligne {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hebergement {
+  height: 200px;
+  width: 300px;
+  box-shadow: 0px 0px 25px lightgray;
+  box-shadow: inset 2px 2px white;
+}
+
+#auberge_image {
+  width: 100%;
+  height: auto;
+  z-index: 4;
+}
+
+#textes_auberge {
+  float: left;
+  padding-left: 15px;
+  width: 285px;
+  height: 120px;
+  position: absolute;
+  top: 600px;
+  background-color: white;
+  border-bottom: 5px solid white;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: 0px 0px 25px lightgray;
+}
+
+#texte_auberge {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#auberge_prix {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hotel_port {
+  height: 200px;
+  width: 300px;
+  box-shadow: 0px 0px 25px lightgray;
+  margin-left: 50px;
+  box-shadow: inset 2px 2px white;
+}
+
+#hotel_port_image {
+  width: 100%;
+  height: auto;
+  z-index: 4;
+}
+
+.etoiles {
+  display: flex;
+}
+
+#etoile_blanche {
+  color: lightgray;
+}

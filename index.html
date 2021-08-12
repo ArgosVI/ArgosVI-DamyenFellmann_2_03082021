@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/97278b8391.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Reservia</title>
+  </head>
+  <body>
+    <!-- **********************LOGO********************** -->
+    <img
+      id="logo_reservia"
+      src="../images/logo/Reservia.svg"
+      alt="logo reservia"
+    />
+
+    <!-- **********************Barre de navigation********************** -->
+    <a id="signup" href="../signup/index.html">S'inscrire</a>
+    <div id="anchor">
+      <a id="hebergement" href="#hebergement">Hébergements</a>
+      <a id="activites" href="#activites">Activités</a>
+    </div>
+
+    <!-- **********************Titres********************** -->
+    <div id="introducing_text">
+      <p id="p1">Trouvez votre hébergement pour des vacances de rêve</p>
+      <p id="p2">En plein centre ville ou en pleine nature</p>
+      <p></p>
+    </div>
+
+    <!-- **********************Recherche********************** -->
+    <div id="search_button">
+      <i id="map" class="fas fa-map-marker-alt"></i>
+      <input id="city_country" type="text" placeholder="Ville, Pays" />
+      <input id="search" type="submit" value="Rechercher" />
+    </div>
+
+    <!-- **********************Filtres********************** -->
+    <div id="filters">
+      <p id="filtres" style="display: inline">Filtres</p>
+      <div id="background"></div>
+      <div id="economic">
+        <i id="billet" class="fas fa-money-bill-wave"></i>
+        <p id="economique" style="display: inline">Économique</p>
+      </div>
+      <div id="background"></div>
+      <div id="homely">
+        <i id="enfant" class="fas fa-child"></i>
+        <input id="familial" type="button" value="Familial" />
+      </div>
+      <div id="background"></div>
+      <div id="romantic">
+        <i id="coeur" class="fas fa-heart"></i>
+        <input id="romantique" type="button" value="Romantique" />
+      </div>
+      <div id="background"></div>
+      <div id="pets">
+        <i id="chien" class="fas fa-dog"></i>
+        <input id="animaux" type="button" value="Animaux autorisés" />
+      </div>
+    </div>
+
+    <!-- **********************Informations********************** -->
+    <div id="information">
+      <i id="i" class="fas fa-info"></i>
+      <p id="logements">
+        Plus de 500 logements sont disponibles dans cette ville
+      </p>
+    </div>
+
+    <!-- **********************Annonces********************** -->
+    <div id="annonces">
+      <p id="texte_annonces">Hébergements à Marseille</p>
+      <div id="premiere_ligne">
+        <div id="auberge" class="hebergement">
+          <div id="auberge_image_div">
+            <img
+              id="auberge_image"
+              src="../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+              alt="Auberge la Cannebière"
+            />
+          </div>
+          <div id="textes_auberge">
+            <p id="texte_auberge">Auberge la Cannebière</p>
+            <p id="auberge_prix">Nuit à partir de <strong>25€</strong></p>
+            <div class="etoiles">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i id="etoile_blanche" class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div id="hotel_port" class="hebergement">
+          <div id="hotel_port_image_div">
+            <img
+              id="hotel_port_image"
+              src="../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+              alt="Hôtel du port"
+            />
+          </div>
+          <div class="textes">
+            <p id="text_hotel_port">Hôtel du pont</p>
+            <p id="hotel_port_prix">Nuit à partir de <strong>52€</strong></p>
+            <div class="etoiles">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
