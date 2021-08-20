@@ -530,3 +530,39 @@ body {
   flex-wrap: wrap;
   align-content: space-between;
 }
+
+/*********************** Footer ***********************/
+
+footer {
+  background-color: var(--color3);
+  height: 250px;
+  margin-top: 70px;
+  font-family: "Raleway", sans-serif;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  width: 70%;
+}
+
+.titre_footer {
+  font-weight: 800;
+  font-size: 23px;
+}
+
+.titre_footer:hover {
+  cursor: pointer;
+}
+
+.texte_footer {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.texte_footer:hover {
+  cursor: pointer;
+}
