@@ -157,6 +157,8 @@ body {
   text-align: center;
 }
 
+/* l'utisliation des class evite d'embriquer les id  */
+/* utilise une class et tu l'applique sur tous les elements html  */
 #economic,
 #homely,
 #romantic,
@@ -169,6 +171,7 @@ body {
   justify-content: space-around;
 }
 
+/* utilise la class fas qui est commune a toutes les icones  */
 .fa-money-bill-wave,
 .fa-child,
 .fa-heart,
@@ -180,6 +183,7 @@ body {
   color: var(--color1);
 }
 
+/* utilise une class et tu l'applique sur tous les elements html  */
 .economique,
 .familial,
 .romantique,
@@ -190,6 +194,7 @@ body {
   font-size: 20px;
 }
 
+/* utilise une class et tu l'applique sur tous les elements html  */
 .economique:hover,
 .familial:hover,
 .romantique:hover,
@@ -327,13 +332,14 @@ body {
 #etoile_blanche {
   color: lightgray;
 }
-
+/* le nomage en camel case et recommandé => afficherPlus */
 .afficher_plus {
   padding-left: 50px;
   font-weight: 800;
   font-size: 20px;
 }
 
+/* le nomage en camel case et recommandé => afficherPlus */
 .afficher_plus:hover {
   cursor: pointer;
 }
@@ -361,6 +367,7 @@ body {
   border-radius: 50px;
 }
 
+/* a fusionner avec la ligne 383 */
 .hebergement_2 {
   margin-left: 50px;
   margin-top: 30px;
