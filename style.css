@@ -16,17 +16,21 @@ body {
 
 /*********************** ANCRE ***********************/
 #anchor {
+  padding-right: 50px;
   float: right;
-  width: 230px;
-  text-align: center;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
   font-weight: 500;
 }
 
 #hebergement {
+  padding-top: 50px;
+  text-align: center;
+  width: 150px;
   text-decoration: none;
-  float: left;
   color: black;
-  margin-top: 50px;
 }
 #hebergement:hover {
   margin-top: 0px;
@@ -36,11 +40,13 @@ body {
 }
 
 #activites {
+  padding-top: 50px;
+  text-align: center;
+  width: 100px;
   text-decoration: none;
-  float: right;
   color: black;
-  margin-top: 50px;
 }
+
 #activites:hover {
   margin-top: 0px;
   padding-top: 48px;
@@ -48,15 +54,11 @@ body {
   color: var(--color1);
 }
 
-/*********************** SIGNUP ***********************/
 #signup {
+  padding-top: 50px;
   font-weight: 700;
   text-decoration: none;
   color: var(--color1);
-  float: right;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 50px;
 }
 
 /*********************** PARAGRAPHES ***********************/
@@ -90,7 +92,7 @@ body {
   width: 500px;
 }
 
-#map {
+.fa-map-marker-alt {
   font-size: 20px;
   border: 18px solid var(--color3);
   border-top-left-radius: 20px;
@@ -144,19 +146,61 @@ body {
 /*********************** FILTRES ***********************/
 #filters {
   padding-left: 60px;
-  height: 20px;
-  width: 1200px;
+  height: 80px;
+  width: 1000px;
   display: flex;
+  justify-content: space-between;
 }
 
-#filtres {
-  font-weight: 600;
+.filtres {
+  font-weight: 800;
+  text-align: center;
+}
+
+#economic,
+#homely,
+#romantic,
+#pets {
+  border: 2px solid #d9d9d9;
+  border-radius: 50px;
+  height: 47px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog {
+  margin-right: 7px;
+  border: 15px solid #deebff;
+  border-radius: 60px;
+  background-color: #deebff;
+  color: var(--color1);
+}
+
+.economique,
+.familial,
+.romantique,
+.animaux {
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.economique:hover,
+.familial:hover,
+.romantique:hover,
+.animaux:hover {
+  cursor: pointer;
 }
 
 /*********************** Informations ***********************/
 #information {
   padding-left: 50px;
-  height: 70px;
+  height: 20px;
   display: flex;
 }
 
@@ -184,72 +228,305 @@ body {
 
 /*********************** Annonces ***********************/
 
-#annonces {
+.annonces_premiere_ligne {
+  display: flex;
   margin-left: 50px;
-  height: 500px;
-  width: 900px;
+  margin-top: 50px;
+  margin-right: 50px;
+  justify-content: space-between;
 }
 
-#premiere_ligne {
+#annonces {
+  height: 800px;
+  width: 67%;
+  background-color: var(--color3);
+  border-radius: 50px;
+}
+
+#texte_annonces {
+  padding-left: 50px;
+  padding-top: 20px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+#texte_annonces_2 {
+  padding-left: 50px;
+  padding-top: 50px;
+  font-weight: 800;
+  font-size: 25px;
+  margin: 0;
+}
+
+#premiere_ligne,
+#deuxieme_ligne {
+  height: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .hebergement {
-  height: 200px;
-  width: 300px;
-  box-shadow: 0px 0px 25px lightgray;
-  box-shadow: inset 2px 2px white;
+  height: 270px;
+  width: 340px;
+  box-shadow: 0px 0px 50px lightgray;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
-#auberge_image {
+.hebergement:hover {
+  cursor: pointer;
+}
+
+.image {
   width: 100%;
-  height: auto;
-  z-index: 4;
+  border-radius: 25px;
+  box-sizing: border-box;
+  border: 5px solid white;
+  position: absolute;
+  vertical-align: center;
 }
 
-#textes_auberge {
+.textes {
+  font-weight: 700;
+  font-size: 20px;
   float: left;
   padding-left: 15px;
-  width: 285px;
-  height: 120px;
+  width: 325px;
+  height: 105px;
   position: absolute;
-  top: 600px;
+  top: 170px;
   background-color: white;
   border-bottom: 5px solid white;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
-  box-shadow: 0px 0px 25px lightgray;
 }
 
-#texte_auberge {
-  font-size: 18px;
+.nom {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 20px;
   font-weight: 800;
 }
 
-#auberge_prix {
+.prix {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 400;
 }
 
-.hotel_port {
-  height: 200px;
-  width: 300px;
-  box-shadow: 0px 0px 25px lightgray;
-  margin-left: 50px;
-  box-shadow: inset 2px 2px white;
-}
-
-#hotel_port_image {
-  width: 100%;
-  height: auto;
-  z-index: 4;
-}
-
 .etoiles {
+  font-size: 15px;
   display: flex;
+  color: var(--color1);
 }
 
 #etoile_blanche {
   color: lightgray;
+}
+
+.afficher_plus {
+  padding-left: 50px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.afficher_plus:hover {
+  cursor: pointer;
+}
+
+.fa-chart-line {
+  padding-right: 50px;
+  padding-top: 50px;
+  font-weight: 800;
+  font-size: 27px;
+}
+
+.fa-chart-line:hover {
+  cursor: pointer;
+}
+
+.les_plus_populaires {
+  display: flex;
+  justify-content: space-between;
+}
+
+#annonces_2 {
+  height: 800px;
+  width: 29%;
+  background-color: var(--color3);
+  border-radius: 50px;
+}
+
+.hebergement_2 {
+  margin-left: 50px;
+  margin-top: 30px;
+  height: 200px;
+  width: 400px;
+  box-shadow: 0px 0px 50px lightgray;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hebergement_2 {
+  cursor: pointer;
+}
+
+.image_2 {
+  width: 100%;
+  border-radius: 25px;
+  box-sizing: border-box;
+  border: 5px solid white;
+}
+
+.textes_2 {
+  float: left;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 215px;
+  height: 175px;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border-bottom: 5px solid white;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.nom_2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.prix_2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#etoiles {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+/*********************** Activités ***********************/
+
+#activites_a_marseille {
+  padding-left: 50px;
+  padding-top: 50px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.emplacements {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.emplacement {
+  width: 400px;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0px 0px 50px lightgray;
+}
+
+.emplacement:hover {
+  cursor: pointer;
+}
+
+.emplacement_2 {
+  width: 400px;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 50px lightgray;
+  position: relative;
+}
+
+.emplacement_2:hover {
+  cursor: pointer;
+}
+
+.image_activites {
+  width: 190%;
+}
+
+#fort_de_pomegues {
+  width: 100%;
+  position: absolute;
+  bottom: -170px;
+}
+
+.texte_activites {
+  width: 490px;
+  padding-left: 30px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#texte_activites_2 {
+  margin: 0;
+  padding-top: 20px;
+  height: 50px;
+  width: 490px;
+  background-color: white;
+  font-weight: 800;
+  font-size: 20px;
+  position: absolute;
+  padding-left: 30px;
+  bottom: 0px;
+}
+
+#iles_du_frioul_img {
+  width: 100%;
+  position: absolute;
+  top: -50px;
+}
+
+#iles_du_frioul {
+  width: 400px;
+  overflow: hidden;
+  height: 200px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 50px lightgray;
+  position: relative;
+}
+
+#notre_dame_de_la_garde_img {
+  width: 100%;
+  position: absolute;
+  top: -10px;
+}
+
+#notre_dame_de_la_garde {
+  width: 400px;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 50px lightgray;
+  position: relative;
+}
+
+#parc_longchamp_img {
+  width: 100%;
+  position: absolute;
+  top: -10px;
+}
+
+.deux_cases {
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
