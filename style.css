@@ -9,13 +9,13 @@ body {
   margin: 0;
 }
 /*********************** LOGO ***********************/
-#logo_reservia {
+.LogoReservia {
   margin-top: 50px;
   margin-left: 50px;
 }
 
 /*********************** ANCRE ***********************/
-#anchor {
+.anchor {
   padding-right: 50px;
   float: right;
   width: 400px;
@@ -25,21 +25,21 @@ body {
   font-weight: 500;
 }
 
-#hebergement {
+.HebergementAnchor {
   padding-top: 50px;
   text-align: center;
   width: 150px;
   text-decoration: none;
   color: black;
 }
-#hebergement:hover {
+.HebergementAnchor:hover {
   margin-top: 0px;
   padding-top: 48px;
   border-top: 2px solid var(--color1);
   color: var(--color1);
 }
 
-#activites {
+.ActivitesAnchor {
   padding-top: 50px;
   text-align: center;
   width: 100px;
@@ -47,14 +47,14 @@ body {
   color: black;
 }
 
-#activites:hover {
+.ActivitesAnchor:hover {
   margin-top: 0px;
   padding-top: 48px;
   border-top: 2px solid var(--color1);
   color: var(--color1);
 }
 
-#signup {
+.SignupAnchor {
   padding-top: 50px;
   font-weight: 700;
   text-decoration: none;
@@ -62,31 +62,27 @@ body {
 }
 
 /*********************** PARAGRAPHES ***********************/
-#introducing_text {
+.IntroducingText {
   margin-left: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-#strong {
-  text-decoration: none;
-}
-
-#p1 {
+.p1 {
   margin-top: 40px;
   margin-bottom: 0px;
   font-weight: 800;
   font-size: 20px;
 }
 
-#p2 {
+.p2 {
   margin-top: 5px;
   font-weight: 500;
   font-size: 15px;
 }
 
 /*********************** RECHERCHE ***********************/
-#search_button {
+.SearchButton {
   margin-left: 50px;
   height: 100px;
   width: 500px;
@@ -100,7 +96,7 @@ body {
   float: left;
 }
 
-#city_country {
+.VillePays {
   height: 20px;
   width: 210px;
   margin: 0;
@@ -114,10 +110,10 @@ body {
   font-weight: 600;
   font-size: 20px;
 }
-#city_country:focus {
+.VillePays:focus {
   outline: none;
 }
-#city_country:hover {
+.VillePays:hover {
   background-color: var(--color3);
   transition: 0.5s;
 }
@@ -126,7 +122,7 @@ body {
   color: black;
 }
 
-#search {
+.rechercher {
   margin: 0;
   padding: 0;
   border: 0;
@@ -139,12 +135,12 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
-#search:hover {
+.rechercher:hover {
   cursor: pointer;
 }
 
 /*********************** FILTRES ***********************/
-#filters {
+.filters {
   padding-left: 60px;
   height: 80px;
   width: 1000px;
@@ -157,12 +153,7 @@ body {
   text-align: center;
 }
 
-/* l'utisliation des class evite d'embriquer les id  */
-/* utilise une class et tu l'applique sur tous les elements html  */
-#economic,
-#homely,
-#romantic,
-#pets {
+.logos {
   border: 2px solid #d9d9d9;
   border-radius: 50px;
   height: 47px;
@@ -183,33 +174,25 @@ body {
   color: var(--color1);
 }
 
-/* utilise une class et tu l'applique sur tous les elements html  */
-.economique,
-.familial,
-.romantique,
-.animaux {
+.BoutonsFiltres {
   border: none;
   background: none;
   font-weight: 700;
   font-size: 20px;
 }
 
-/* utilise une class et tu l'applique sur tous les elements html  */
-.economique:hover,
-.familial:hover,
-.romantique:hover,
-.animaux:hover {
+.BoutonsFiltres:hover {
   cursor: pointer;
 }
 
 /*********************** Informations ***********************/
-#information {
+.information {
   padding-left: 50px;
   height: 20px;
   display: flex;
 }
 
-#i {
+.fa-info {
   vertical-align: middle;
   height: 15px;
   width: 15px;
@@ -223,7 +206,7 @@ body {
   align-self: center;
 }
 
-#logements {
+.logements {
   padding-left: 13px;
   vertical-align: middle;
   text-align: center;
@@ -233,7 +216,7 @@ body {
 
 /*********************** Annonces ***********************/
 
-.annonces_premiere_ligne {
+.AnnoncesPremiereLigne {
   display: flex;
   margin-left: 50px;
   margin-top: 50px;
@@ -241,21 +224,21 @@ body {
   justify-content: space-between;
 }
 
-#annonces {
+.annonces {
   height: 800px;
   width: 67%;
   background-color: var(--color3);
   border-radius: 50px;
 }
 
-#texte_annonces {
+.TexteAnnonces {
   padding-left: 50px;
   padding-top: 20px;
   font-weight: 800;
   font-size: 25px;
 }
 
-#texte_annonces_2 {
+.texte_annonces_2 {
   padding-left: 50px;
   padding-top: 50px;
   font-weight: 800;
@@ -263,8 +246,7 @@ body {
   margin: 0;
 }
 
-#premiere_ligne,
-#deuxieme_ligne {
+.ligne {
   height: 300px;
   padding-left: 50px;
   padding-right: 50px;
@@ -329,18 +311,16 @@ body {
   color: var(--color1);
 }
 
-#etoile_blanche {
+#EtoileBlanche {
   color: lightgray;
 }
-/* le nomage en camel case et recommandé => afficherPlus */
-.afficher_plus {
+.AfficherPlus {
   padding-left: 50px;
   font-weight: 800;
   font-size: 20px;
 }
 
-/* le nomage en camel case et recommandé => afficherPlus */
-.afficher_plus:hover {
+.AfficherPlus:hover {
   cursor: pointer;
 }
 
@@ -360,7 +340,7 @@ body {
   justify-content: space-between;
 }
 
-#annonces_2 {
+.annonces2 {
   height: 800px;
   width: 29%;
   background-color: var(--color3);
@@ -368,7 +348,7 @@ body {
 }
 
 /* a fusionner avec la ligne 383 */
-.hebergement_2 {
+.hebergement2 {
   margin-left: 50px;
   margin-top: 30px;
   height: 200px;
@@ -378,20 +358,17 @@ body {
   position: relative;
   display: flex;
   justify-content: flex-start;
-}
-
-.hebergement_2 {
   cursor: pointer;
 }
 
-.image_2 {
+.image2 {
   width: 100%;
   border-radius: 25px;
   box-sizing: border-box;
   border: 5px solid white;
 }
 
-.textes_2 {
+.textes2 {
   float: left;
   padding-left: 15px;
   padding-top: 15px;
@@ -405,14 +382,14 @@ body {
   border-bottom-right-radius: 25px;
 }
 
-.nom_2 {
+.nom2 {
   margin-top: 10px;
   margin-bottom: 0px;
   font-size: 20px;
   font-weight: 800;
 }
 
-.prix_2 {
+.prix2 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -427,7 +404,7 @@ body {
 
 /*********************** Activités ***********************/
 
-#activites_a_marseille {
+.ActivitesAMarseille {
   padding-left: 50px;
   padding-top: 50px;
   font-weight: 800;
@@ -452,7 +429,7 @@ body {
   cursor: pointer;
 }
 
-.emplacement_2 {
+.Emplacement2 {
   width: 400px;
   overflow: hidden;
   height: 300px;
@@ -461,28 +438,28 @@ body {
   position: relative;
 }
 
-.emplacement_2:hover {
+.Emplacement2:hover {
   cursor: pointer;
 }
 
-.image_activites {
+.ImageActivites {
   width: 190%;
 }
 
-#fort_de_pomegues {
+#FortDePomegues {
   width: 100%;
   position: absolute;
   bottom: -170px;
 }
 
-.texte_activites {
+.TexteActivites {
   width: 490px;
   padding-left: 30px;
   font-weight: 800;
   font-size: 20px;
 }
 
-#texte_activites_2 {
+.TexteActivites2 {
   margin: 0;
   padding-top: 20px;
   height: 50px;
@@ -495,13 +472,13 @@ body {
   bottom: 0px;
 }
 
-#iles_du_frioul_img {
+#IlesDuFrioulImg {
   width: 100%;
   position: absolute;
   top: -50px;
 }
 
-#iles_du_frioul {
+#IlesDuFrioul {
   width: 400px;
   overflow: hidden;
   height: 200px;
@@ -510,13 +487,13 @@ body {
   position: relative;
 }
 
-#notre_dame_de_la_garde_img {
+#NotreDameDeLaGardeImg {
   width: 100%;
   position: absolute;
   top: -10px;
 }
 
-#notre_dame_de_la_garde {
+#NotreDameDeLaGarde {
   width: 400px;
   overflow: hidden;
   height: 250px;
@@ -525,13 +502,13 @@ body {
   position: relative;
 }
 
-#parc_longchamp_img {
+#ParcLongchampImg {
   width: 100%;
   position: absolute;
   top: -10px;
 }
 
-.deux_cases {
+.DeuxCases {
   display: flex;
   width: 400px;
   flex-wrap: wrap;
@@ -556,20 +533,20 @@ footer {
   width: 70%;
 }
 
-.titre_footer {
+.TitreFooter {
   font-weight: 800;
   font-size: 23px;
 }
 
-.titre_footer:hover {
+.TitreFooter:hover {
   cursor: pointer;
 }
 
-.texte_footer {
+.TexteFooter {
   font-weight: 500;
   font-size: 18px;
 }
 
-.texte_footer:hover {
+.TexteFooter:hover {
   cursor: pointer;
 }
