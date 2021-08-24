@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/97278b8391.js"
@@ -20,18 +20,20 @@
 
   <body>
     <!-- **********************LOGO********************** -->
-    <img
-      class="LogoReservia"
-      src="./images/logo/Reservia.svg"
-      alt="logo reservia"
-    />
-    <!-- **********************Barre de navigation********************** -->
     <div class="anchor">
-      <a class="HebergementAnchor" href="#AnnoncesPremiereLigne"
+      <img
+        class="LogoReservia"
+        src="./images/logo/Reservia.svg"
+        alt="logo reservia"
+      />
+      <!-- **********************Barre de navigation********************** -->
+      <a class="SignupAnchor" href="placeholder">S'inscrire</a>
+      <a class="HebergementAnchor" azvhref="zetb#AnnoncesPremiereLigne"
         >Hébergements</a
       >
-      <a class="ActivitesAnchor" href="#les_plus_populaires">Activités</a>
-      <a class="SignupAnchor" href="../signup/index.html">S'inscrire</a>
+      <a class="ActivitesAnchor" azevhref="erbt#ActivitesAMarseille"
+        >Activités</a
+      >
     </div>
     <!-- **********************Titres********************** -->
     <div class="IntroducingText">
@@ -43,6 +45,7 @@
       <i class="fas fa-map-marker-alt"></i>
       <input class="VillePays" type="text" placeholder="Marseille, France" />
       <input class="rechercher" type="submit" value="Rechercher" />
+      <i class="fas fa-search"></i>
     </div>
     <!-- **********************Filtres********************** -->
     <div class="filters">
@@ -72,7 +75,7 @@
       </p>
     </div>
     <!-- **********************Annonces********************** -->
-    <div class="AnnoncesPremiereLigne">
+    <div id="AnnoncesPremiereLigne">
       <div class="annonces">
         <p class="TexteAnnonces">Hébergements à Marseille</p>
         <div class="ligne">
@@ -200,7 +203,7 @@
       <!-- **********************Les plus populaires********************** -->
       <div class="annonces2">
         <div class="colone2">
-          <div class="les_plus_populaires">
+          <div id="les_plus_populaires">
             <p class="texte_annonces_2">Les plus populaires</p>
             <i class="fas fa-chart-line"></i>
           </div>
@@ -263,7 +266,8 @@
         </div>
       </div>
     </div>
-    <p class="ActivitesAMarseille">Activités à Marseille</p>
+    <!-- **********************Activités à Marseille********************** -->
+    <p id="ActivitesAMarseille">Activités à Marseille</p>
     <div class="emplacements">
       <div class="emplacement">
         <img
@@ -276,7 +280,7 @@
       <div class="DeuxCases">
         <div class="Emplacement2">
           <img
-            id="FortDePomegues"
+            id="FortDePomeguesImg"
             class="ImageActivites"
             src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
             alt="Fort de Pomègues"
