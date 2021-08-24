@@ -4,10 +4,6 @@
   --color3: #f2f2f2;
 }
 
-html {
-  height: 100vw;
-}
-
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -18,6 +14,7 @@ body {
   height: 60px;
   grid-column: 1;
   grid-row: 1;
+  text-align: center;
 }
 
 /*********************** ANCRE ***********************/
@@ -100,8 +97,8 @@ body {
 /*********************** RECHERCHE ***********************/
 .SearchButton {
   margin-left: 70px;
-  height: 100px;
-  width: 50%;
+  display: flex;
+  gap: 0;
 }
 
 .fa-map-marker-alt {
@@ -114,13 +111,10 @@ body {
 }
 
 .VillePays {
-  height: 33px;
   width: 300px;
+  height: 57px;
   margin: 0;
-  margin-left: 10px;
   padding-left: 15px;
-  padding-top: 17px;
-  padding-bottom: 15px;
   border-top: 2px solid var(--color3);
   border-bottom: 2px solid var(--color3);
   border-left: 0;
@@ -144,7 +138,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  height: 70px;
+  height: 62px;
   width: 150px;
   background-color: var(--color1);
   border-top-right-radius: 20px;
@@ -157,14 +151,14 @@ body {
   cursor: pointer;
 }
 
-.fa-search {
+.loupe {
   display: none;
 }
 
 /*********************** FILTRES ***********************/
 .filters {
   padding-left: 70px;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
@@ -589,11 +583,7 @@ footer {
   cursor: pointer;
 }
 
-@media (max-width: 1280px) {
-  body {
-    width: 100%;
-  }
-
+@media (max-width: 1024px) {
   .anchor {
     padding: 0;
     margin: 0;
@@ -603,9 +593,13 @@ footer {
     gap: 0;
   }
 
+  .p1 {
+    padding-right: 50px;
+  }
+
   .LogoReservia {
-    padding-left: 5%;
-    padding-top: 5%;
+    padding-top: 28px;
+    padding-left: 20px;
   }
 
   .SignupAnchor {
@@ -627,7 +621,8 @@ footer {
 
   .ActivitesAnchor:hover {
     border-top: 0;
-    border-bottom: 2px solid var(--color1);
+    border-bottom: 3px solid var(--color1);
+    padding-top: 50px;
   }
 
   .HebergementAnchor {
@@ -642,23 +637,29 @@ footer {
 
   .HebergementAnchor:hover {
     border-top: 0;
-    border-bottom: 2px solid var(--color1);
+    border-bottom: 3px solid var(--color1);
+    padding-top: 50px;
   }
 
-  .fa-search {
-    display: inline;
+  .SearchButton {
+    width: 450px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .loupe {
+    display: flex;
+    height: 15px;
     margin: 0;
     padding: 0;
-    border: 0;
-    padding-top: 25px;
-    padding-bottom: 22px;
-    padding-left: 25px;
-    padding-right: 25px;
+    border: 25px solid var(--color1);
     width: 150px;
     background-color: var(--color1);
     border-radius: 20px;
     color: white;
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
   }
 
@@ -669,6 +670,18 @@ footer {
   .filters {
     padding-left: 75px;
     gap: 15px;
+  }
+
+  .filtres {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  #FortDePomeguesImg {
+    width: 150%;
+    position: absolute;
+    left: -150px;
   }
 
   #NotreDameDeLaGardeImg {
@@ -688,10 +701,14 @@ footer {
     width: 150%;
     position: absolute;
     top: 0px;
+    left: -150px;
   }
 
   .ImageActivites {
-    width: 300%;
+    width: 100%;
+    max-height: 180px;
+    object-fit: none;
+    object-position: 50% 57%;
   }
 
   #AnnoncesPremiereLigne {
@@ -752,10 +769,175 @@ footer {
 
   .emplacements {
     flex-direction: column;
+    gap: 20px;
   }
 
   .emplacement {
     height: 250px;
     width: 100%;
+  }
+
+  .Emplacement2 {
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px lightgray;
+  }
+
+  .DeuxCases {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  .categories {
+    flex-direction: column;
+    background-color: var(--color3);
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 760px) {
+  .LogoReservia {
+    height: 50px;
+    padding-top: 30px;
+  }
+
+  .HebergementAnchor {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    margin: 0 auto;
+    height: 30px;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+  }
+
+  .ActivitesAnchor {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    height: 30px;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+  }
+
+  .SignupAnchor,
+  .ActivitesAnchor,
+  .HebergementAnchor,
+  .p2,
+  .logements,
+  .prix,
+  .prix2 {
+    font-size: 15px;
+  }
+
+  .IntroducingText {
+    margin-left: 30px;
+  }
+
+  .p1 {
+    font-size: 21px;
+    padding-right: 0;
+    padding-bottom: 5px;
+  }
+
+  .SearchButton {
+    margin-left: 30px;
+    height: 50px;
+    width: auto;
+  }
+
+  .fa-map-marker-alt {
+    display: flex;
+    background-color: var(--color3);
+    font-size: 18px;
+    border: 17px solid var(--color3);
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .VillePays {
+    width: 150px;
+    font-size: 17px;
+    height: 44px;
+    width: 60%;
+  }
+
+  .loupe {
+    display: flex;
+    height: 15px;
+    width: 15px;
+    margin: 0;
+    padding: 0;
+    border: 17px solid var(--color1);
+    background-color: var(--color1);
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .filters {
+    margin-left: 30px;
+    padding-left: 0;
+    gap: 10px;
+    margin-right: 0;
+    width: 90%;
+  }
+
+  .logos {
+    border: 2px solid #d9d9d9;
+    border-radius: 50px;
+    height: 45px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logos .fas {
+    margin-right: 7px;
+    border: 15px solid #deebff;
+    border-radius: 60px;
+    background-color: #deebff;
+    color: var(--color1);
+    font-size: 17px;
+  }
+
+  .BoutonsFiltres {
+    font-size: 15px;
+  }
+
+  .filtres {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .information {
+    margin-top: 30px;
+    padding-left: 30px;
+  }
+
+  .fa-info {
+    height: 10px;
+    width: 10px;
+    font-size: 13px;
+  }
+
+  .logements {
+    padding-left: 15px;
+    font-size: 15px;
+    text-align: left;
+    align-self: flex-start;
   }
 }
