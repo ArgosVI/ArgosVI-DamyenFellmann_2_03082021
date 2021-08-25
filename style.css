@@ -8,6 +8,11 @@ body {
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
 /*********************** LOGO ***********************/
 .LogoReservia {
   padding-top: 50px;
@@ -103,7 +108,7 @@ body {
 
 .fa-map-marker-alt {
   font-size: 20px;
-  border: 23px solid var(--color3);
+  border: 20px solid var(--color3);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   float: left;
@@ -158,6 +163,7 @@ body {
 /*********************** FILTRES ***********************/
 .filters {
   padding-left: 70px;
+  padding-top: 50px;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
@@ -458,7 +464,7 @@ body {
 .emplacement {
   width: 400px;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 0px 0px 50px lightgray;
 }
 
@@ -470,7 +476,7 @@ body {
   width: 400px;
   overflow: hidden;
   height: 300px;
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 0px 0px 50px lightgray;
   position: relative;
 }
@@ -518,10 +524,16 @@ body {
 
 #IlesDuFrioul {
   overflow: hidden;
-  height: 200px;
+  height: 220px;
   border-radius: 30px;
   box-shadow: 0px 0px 50px lightgray;
   position: relative;
+}
+
+#FortDePomeguesImg {
+  width: 100%;
+  object-fit: cover;
+  object-position: -20% 0;
 }
 
 #NotreDameDeLaGardeImg {
@@ -536,6 +548,10 @@ body {
   border-radius: 30px;
   box-shadow: 0px 0px 50px lightgray;
   position: relative;
+}
+
+#ParcLongchamp {
+  height: 270px;
 }
 
 #ParcLongchampImg {
@@ -653,7 +669,7 @@ footer {
     margin: 0;
     padding: 0;
     border: 25px solid var(--color1);
-    width: 150px;
+    width: 15px;
     background-color: var(--color1);
     border-radius: 20px;
     color: white;
@@ -665,6 +681,10 @@ footer {
 
   .rechercher {
     display: none;
+  }
+
+  .VillePays {
+    height: 60px;
   }
 
   .filters {
@@ -833,7 +853,8 @@ footer {
   .p2,
   .logements,
   .prix,
-  .prix2 {
+  .prix2,
+  .TexteFooter {
     font-size: 15px;
   }
 
@@ -849,6 +870,7 @@ footer {
 
   .SearchButton {
     margin-left: 30px;
+    margin-bottom: 0;
     height: 50px;
     width: auto;
   }
@@ -894,6 +916,7 @@ footer {
     gap: 10px;
     margin-right: 0;
     width: 90%;
+    padding-top: 15px;
   }
 
   .logos {
@@ -939,5 +962,163 @@ footer {
     font-size: 15px;
     text-align: left;
     align-self: flex-start;
+  }
+
+  .annonces2 {
+    height: auto;
+  }
+
+  .colone2 {
+    margin: 30px 30px;
+    height: 100%;
+  }
+
+  .texte_annonces_2,
+  .fa-chart-line,
+  .TexteAnnonces {
+    font-size: 20px;
+  }
+
+  .hebergement2 {
+    height: 150px;
+  }
+
+  .textes2 {
+    width: 55%;
+    height: 140px;
+  }
+
+  .nom2 {
+    font-size: 17px;
+    margin-top: 0;
+  }
+
+  .prix2 {
+    font-size: 15px;
+  }
+
+  .etoiles {
+    font-size: 13px;
+  }
+
+  #etoiles {
+    padding-top: 25px;
+  }
+
+  .image2 {
+    width: 50%;
+    object-position: 50% 100%;
+  }
+
+  .TexteAnnonces {
+    padding-left: 30px;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .ligne {
+    padding: 0 30px;
+  }
+
+  .hebergement {
+    height: 210px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    height: 120px;
+  }
+
+  .textes {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    top: 0;
+    padding-left: 10px;
+  }
+
+  .nom {
+    font-size: 17px;
+  }
+
+  .prix {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+
+  .AfficherPlus {
+    font-size: 18px;
+    padding-left: 30px;
+    margin-top: 30px;
+  }
+
+  #ActivitesAMarseille {
+    padding-left: 20px;
+    padding-top: 0;
+    font-size: 20px;
+  }
+
+  .emplacements {
+    padding: 0 20px;
+  }
+
+  .emplacement,
+  .Emplacement2 {
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  #NotreDameDeLaGarde {
+    height: 200px;
+  }
+
+  .ImageActivites {
+    width: 100%;
+    max-height: 140px;
+    object-fit: cover;
+  }
+
+  .TexteActivites,
+  .TexteActivites2 {
+    font-size: 17px;
+    padding-left: 20px;
+  }
+
+  #FortDePomeguesImg {
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  #ParcLongchamp {
+    height: 200px;
+  }
+
+  #ParcLongchampImg {
+    width: 100%;
+    left: 0;
+  }
+
+  .TexteActivites2 {
+    margin: 0;
+    padding-top: 20px;
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    font-weight: 800;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .categories {
+    padding: 30px;
+  }
+
+  .TitreFooter {
+    font-size: 20px;
   }
 }
