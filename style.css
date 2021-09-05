@@ -530,8 +530,8 @@ a {
 
 #FortDePomeguesImg {
   width: 100%;
-  object-fit: cover;
-  object-position: -20% 0;
+  position: absolute;
+  top: -170px;
 }
 
 #NotreDameDeLaGardeImg {
@@ -699,9 +699,10 @@ footer {
   }
 
   #FortDePomeguesImg {
-    width: 150%;
+    object-fit: cover;
+    width: 120%;
     position: absolute;
-    left: -150px;
+    top: 0px;
   }
 
   #NotreDameDeLaGardeImg {
@@ -777,6 +778,7 @@ footer {
 
   .hebergement {
     width: 100%;
+    box-shadow: 0px 0px 20px lightgray;
   }
 
   .image {
