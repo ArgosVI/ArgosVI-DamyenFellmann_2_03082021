@@ -570,8 +570,7 @@ a {
 /*********************** Footer ***********************/
 
 footer {
-  background-color: var(--color3);
-  height: 250px;
+  background: var(--color3);
   margin-top: 70px;
   font-family: "Raleway", sans-serif;
 }
@@ -580,8 +579,6 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 30px;
   width: 70%;
 }
 
@@ -820,7 +817,7 @@ footer {
   .categories {
     flex-direction: column;
     background-color: var(--color3);
-    width: 100%;
+    width: 50%;
     padding-bottom: 50px;
   }
 }
@@ -1116,10 +1113,6 @@ footer {
     font-weight: 800;
     position: absolute;
     bottom: 0px;
-  }
-
-  .categories {
-    padding: 30px;
   }
 
   .TitreFooter {
