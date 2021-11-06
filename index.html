@@ -39,8 +39,8 @@
     <div class="SearchButton">
       <i class="fas fa-map-marker-alt"></i>
       <input class="VillePays" type="text" placeholder="Marseille, France" />
-        <input class="rechercher" type="submit" value="Rechercher" />
-        <a href="#">
+      <input class="rechercher" type="submit" value="Rechercher" />
+      <a href="#">
         <div class="loupe">
           <i class="fas fa-search"></i>
         </div>
@@ -76,7 +76,7 @@
     <!-- **********************Annonces********************** -->
     <div class="AnnoncesPremiereLigne">
       <div class="annonces">
-        <p class="TexteAnnonces AncreHebergement">
+        <p id="AncreHebergement" class="TexteAnnonces AncreHebergement">
           Hébergements à Marseille
         </p>
         <div class="ligne">
@@ -143,8 +143,6 @@
               </div>
             </div>
           </a>
-        </div>
-        <div class="ligne">
           <a href="#" class="hebergement">
             <div>
               <img
@@ -215,7 +213,7 @@
       <div class="annonces2">
         <div class="colone2">
           <div class="les_plus_populaires">
-            <p class="texte_annonces_2 ">Les plus populaires</p>
+            <p class="texte_annonces_2">Les plus populaires</p>
             <a href="#">
               <i class="fas fa-chart-line"></i>
             </a>
@@ -286,9 +284,11 @@
       </div>
     </div>
     <!-- **********************Activités à Marseille********************** -->
-    <p class="ActivitesAMarseille">Activités à Marseille</p>
+    <p id="ActivitesAMarseille" class="ActivitesAMarseille">
+      Activités à Marseille
+    </p>
     <div class="emplacements">
-      <a href="#">
+      <a href="#" class="A">
         <div class="emplacement">
           <img
             class="ImageActivites"
@@ -299,8 +299,8 @@
         </div>
       </a>
       <div class="DeuxCases">
-        <a class="Emplacement2" href="#">
-          <div class="Emplacement2">
+        <a class="Emplacement2 FortDePomegues" href="#">
+          <div class="Emplacement2 FortDePomegues">
             <img
               class="ImageActivites FortDePomeguesImg"
               src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
@@ -320,7 +320,7 @@
           </div>
         </a>
       </div>
-      <a href="#">
+      <a href="#" class="A">
         <div class="emplacement">
           <img
             class="ImageActivites"
@@ -358,7 +358,9 @@
         <div class="APropos">
           <p class="TitreFooter">A propos</p>
           <a href="#"><p class="TexteFooter">Fonctionnement du site</p></a>
-          <a href="#"><p class="TexteFooter">Conditions générales de vente</p></a>
+          <a href="#"
+            ><p class="TexteFooter">Conditions générales de vente</p></a
+          >
           <a href="#"><p class="TexteFooter">Données et confidentialité</p></a>
         </div>
         <div class="NosHebergements">
